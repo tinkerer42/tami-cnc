@@ -1,0 +1,129 @@
+* Status: 
+Last Updated: [2018-05-14]
+1. X & Y & Z motor and encoder cables are done
+2. Z needs brake cable
+3. no intra-cabling design for unit 2
+
+
+* Master Todo List [2/17]
+** TODO [#A] schedule meeting of Guy & Zvika and myself for 2 intra     :Alon:
+** TODO learn orgmode project management:                                :Alon:
+*** http://juanreyero.com/article/emacs/org-teams.html
+** TODO diagram of intra unit 3 wiring (limit switches etc)              :Alon:
+*** based off CNC Inter Units Cabling
+*** Use LibreOffice Draw?
+*** Each assembly is designated 3A1, 3A2 etc
+*** We have existing wires with labels, so their J subassemblies will be parts of the relevant As
+*** for instance: 3J8 is part of 3A1 (made up example)
+*** We would have used 3A1J1 in retrospect, but the labels are already made
+*** see "CNC Inter Units Cabling" (or the cables)
+** TODO check cable connectivity
+** TODO Axis X [0/1]
+*** TODO clutch not attached correctly
+** TODO Axis Z [0/1]
+*** TODO Break [0/1]
+**** TODO cable from unit 3 to 2 [0/4]                           :Guy:Zvika:
+***** TODO choose connector
+***** TODO choose cable
+***** TODO inventory (purchase)
+***** TODO create
+** TODO bring limit switches                                            :Guy:
+** TODO check in 3d drawing for existing cable tracks design            :Guy:
+** TODO find old images with c.g. from melchet                          :Guy:
+** TODO limit switches [0/2]
+*** POST design and manufacture of cables                               :Guy:
+**** small connector for each limit switch (few cm)
+**** TODO choose cable for limit switches
+**** TODO wiring :Guy:
+**** cables to the corner of the CNC:
+**** TODO start documenting unit 3 intra-cabling
+**** TODO mechanical holders of limit switches - design and manufacture :idan:
+** TODO cable tracks [0/2]
+*** TODO figure out how the cable tracks should be anchored
+*** TODO anchor the cable tracks
+** Control box (unit 2)
+*** TODO emergency stop button
+*** TODO 220V input
+*** TODO position and wiring of the control panel of the spindle controller
+** comment - the diagram of the laser-cut panel is not up to date. Vitali did the last version.
+** TODO Spindle [0/1]
+*** wiring to spindle :Guy: [0/3]
+**** TODO choose wire
+**** TODO choose connector
+**** TODO do the wiring
+*** TODO control spindle programmatically (nice to have)
+** TODO linear rails [0/1]
+*** TODO clean and grease the linear rails
+** TODO water cooling for the motor [0/1]
+** TODO Water cooling for bit
+** TODO hole for 2J1 (USB)
+*** measured at 21-22mm diameter (TODO measure precisely with calipers)
+*** search for USB connector that fits this hole
+** TODO continuity check all the cables
+** TODO [0/3] Z-axis Brake:
+*** TODO ask Guy if he ordered the cable and plug                      :Alon:
+    SCHEDULED: <2018-05-07 Mon>
+*** TODO find part number for brake plug (Z-axis): W6P3
+*** TODO choose a cable for the brake plug: connecting W6P3 to W6P1 (two conductor, flexible, 670 cm)
+** TODO [0/2] Spindle
+*** TODO find Spindle cable                                            :Alon:
+should be in the previous incarnation of cables. Matches Spindle motor. If it's too hard, cut out the connector only. Dead or alive.
+** TODO find & photograph w/ reference frame Unit 2 Panel (steel, cut, approx 20x40 cm^2). (picture in google docs) :Alon:
+** TODO measure w/ calibre / ruler diameter of spindle hole in unit 2 panel                                         :Alon:
+** TODO [0/2] Limit switches
+*** TODO verify they are connected (Jeremy's work) :Alon:
+    SCHEDULED: <2018-05-09 Wed>
+*** TODO acquire cable                                                  :Guy:
+** TODO document dimensions of Unit 2 (control box) <2018-05-23 Wed>    :Guy:Alon:
+** TODO disassamble and bring panel of control box <2018-05-23 Wed>     :Guy:Alon:
+** TODO build cable W8 (spindle power). Everything is ready: connectors, spreadsheet, cable roll :Gu
+:
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+
+* Idan's email: idan.kp@gmail.com
+** TODO ask Idan how things are going (gently) with the limit switch mechanics on Tuesday :Alon:
+
+* Documentation
+Computerized numerical control machine for TAMI.
+
+* Definitions
+** unit 1: the PC
+** unit 2: Control box 
+** unit 3: the CNC machine itself
+** Cables are marked with W
+** Plug's ends are marked with a P
+** cable tracks: black plastic conduits that look like the tracks of a tank, rotating with the cables when the CNC moves
+
+* Basic outline of cabling
+PC <-USB-> Control Box
+Control Box gets 220V
+Control Box to CNC:
+1. Bulk of cables: 2 cables per motor: encoder & power (total 6)
+ 1.1 Z axis is special, includes braking cable
+2. Limit switches cable
+3. Spindle cable
+
+
+
+* First meeting of the new era of the CNC
+** <2017-10-18 Wed>
+** Learned about Reference Designation
+** Took down task notes
+** Alon picked the secretery position
+** Looked at a problem on the X axis, the connection between the ball screw and it's shaft coupler is marginal because the screw was cut too short.
+
+* [2017-10-25 Wed] meeting
+** Guy brought limit switches instead of the existing ones.
+** TODO notify Idan about limit switches                                 :me:
+** Guy brought cable samples
+** will use google sheets, and stop using the excels.
+
+
+* [2018-06-05]
+** DONE Review 2-3 cabeling. Z-break, limit
+** NEXT review cabeling in unit 2 (control box)
