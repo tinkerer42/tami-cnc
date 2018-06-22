@@ -81,9 +81,8 @@ should be in the previous incarnation of cables. Matches Spindle motor. If it's 
 
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-
-
+Misc Data
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 * Idan's email: idan.kp@gmail.com
 ** TODO ask Idan how things are going (gently) with the limit switch mechanics on Tuesday :Alon:
@@ -109,6 +108,9 @@ Control Box to CNC:
 3. Spindle cable
 
 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Meeting Notes
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 * First meeting of the new era of the CNC
 ** <2017-10-18 Wed>
@@ -127,3 +129,13 @@ Control Box to CNC:
 * [2018-06-05]
 ** DONE Review 2-3 cabeling. Z-break, limit
 ** NEXT review cabeling in unit 2 (control box)
+
+* [2018-06-22]
+** research about PC interface board
+*** parallel port is out: obsolete.
+*** mach3 is being phased out but still has lots of community. 
+*** conclusion: find an interface board that supports mach4, and ideally also mach3 (usually true anyway)
+*** this disqualifies both boards we have on-hand
+*** TODO look for the best interface board: not too expensive (<200$), good reviews, works without complications. step/dir output (most are)
+*** some candidates: ESS (Ethernet Smooth Stepper), various UCxxx, PoKeys57CNC
+*** check electrical properties of the I/O of the samsung motor drivers. It may be a chore to interface them to the PC interface board, if the board uses different voltage and current
