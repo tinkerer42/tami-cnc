@@ -141,7 +141,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 *** check electrical properties of the I/O of the samsung motor drivers. It may be a chore to interface them to the PC interface board, if the board uses different voltage and current
 
 * [2018-07-22]
-** problem: limits should reach both ESS and drives, but drives expect 24V and ESS expects 5V.
-*** solution 1: limits work on 24V, hand made adapter board translates to 5V for ESS. current suggestion calls for transistor, 3 resistors and zener per limit sw.
-*** solution 2: limits work on 5V, relays translate it to 24V. requires 1 relay per limit sw. 
-*** solution 3: look for off the shelf level translator board.
+** Ethernet Smooth Stepper (ESS) is chosen as interface board. a decent deal on ESS + Mach4 license + adapter board is found in https://cnc4pc.com/ethernet-smooth-stepper-board.html
+** problem 1: limit switch signals should reach both ESS and drives, but drives expect 24V and ESS expects 5V.
+** problem 2: ESS adapter board (model C25) has a high input current (~15mA!) becasue of the LEDs. This complicates possible circuits that handle the 24V<-->5V interface.
+*** solution 1: build a more complicated interface circuit that overcomes this. 
+*** solution 2: don't use the C25 adapter board. find a better adapter board and build an interface circuit to it (24V<-->5V)
+*** solution 3: don't use the C25 adapter board. build an adapter board ourselves that fits our requirements exactly [preferred by Guy]. May save on wiring effort. 
+
+
