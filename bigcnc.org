@@ -139,3 +139,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 *** TODO look for the best interface board: not too expensive (<200$), good reviews, works without complications. step/dir output (most are)
 *** some candidates: ESS (Ethernet Smooth Stepper), various UCxxx, PoKeys57CNC
 *** check electrical properties of the I/O of the samsung motor drivers. It may be a chore to interface them to the PC interface board, if the board uses different voltage and current
+
+* [2018-07-22]
+** problem: limits should reach both ESS and drives, but drives expect 24V and ESS expects 5V.
+*** solution 1: limits work on 24V, hand made adapter board translates to 5V for ESS. current suggestion calls for transistor, 3 resistors and zener per limit sw.
+*** solution 2: limits work on 5V, relays translate it to 24V. requires 1 relay per limit sw. 
+*** solution 3: look for off the shelf level translator board.
