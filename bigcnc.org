@@ -149,3 +149,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 *** solution 3: don't use the C25 adapter board. build an adapter board ourselves that fits our requirements exactly [preferred by Guy]. May save on wiring effort. 
 
 
+* [2018-10-02]
+** remember connecting the machine body to ground, for safety. 
+** order ESS + Mach4
+** send Zvika the diagram of the BoB for printing
